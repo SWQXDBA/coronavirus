@@ -1,5 +1,5 @@
 pipeline {
-  agent { label 'mac-mini-cd' }
+  agent { label 'mac-mini-sanley' }
   environment {
       revision = ""
   }
