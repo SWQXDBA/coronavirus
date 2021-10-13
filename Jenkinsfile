@@ -6,8 +6,8 @@ pipeline {
   stages {
     stage('Installing') {
         steps {
-            sh 'npm install'
-            sh 'npm run pod'
+            echo 'npm install'
+            echo 'npm run pod'
         }
     }
 
@@ -16,7 +16,7 @@ pipeline {
         parallel {
             stage('Styles') {
                 steps {
-                    sh 'npm run lint'
+                    echo 'npm run lint'
                 }
             }
 
@@ -33,7 +33,7 @@ pipeline {
         parallel {
             stage('UT') {
                 steps {
-                    sh 'npm run test'
+                    echo 'npm run test'
                 }
             }
 
