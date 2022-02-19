@@ -12,12 +12,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 class CoronavirusApplicationTests {
     BaseDao dao;
     PatientDao da;
-    @Test
+/*    @Test
     void contextLoads() {
         System.out.println("330321199809267326");
         System.out.println(da.findAll());
         Base byIdCard = dao.findByIdCard("330321199809267326");
         System.out.println(byIdCard);
-    }
+    }*/
 
 }
